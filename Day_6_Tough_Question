@@ -1,0 +1,36 @@
+//Day_6
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int t;
+   cout<<"Enter Number Of Test cases: ";
+   cin >>t;
+   while(t--)
+   {
+       int n,i,count=0;
+       cout<<"Enter No. Of Digits: ";
+       cin>>n;
+       string d;
+       cout<<"Enter Your Number: ";
+       cin>>d;
+       for(i=0;i<n;i++)
+       {
+           if(d[i]=='0' || d[i]=='5')
+           {
+               count++;
+           }
+       }
+       if(count>0)
+       {
+           cout<<"Yes! It Is Possible."<<endl;
+       }
+       else
+       {
+           cout<<"No! It Is Not Possible."<<endl;
+       }
+   }
+   return 0;
+}
