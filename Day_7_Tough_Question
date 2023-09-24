@@ -1,0 +1,30 @@
+//Day_7
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int t;
+   cout<<"Enter Number Of Test cases: ";
+   cin >>t;
+   while(t--)
+   {
+       int P_a,P_b,P_c;
+       cout<<"People From A District: ";
+       cin>>P_a;
+       cout<<"People From B District: ";
+       cin>>P_b;
+       cout<<"People From C District: ";
+       cin>>P_c;
+       if(P_a+P_c>P_b)
+       {
+           cout<<"Total Guest: "<<P_a+P_c<<endl;
+       }
+       else
+       {
+           cout<<"Total Guest: "<<P_b<<endl;
+       }
+   }
+   return 0;
+}
