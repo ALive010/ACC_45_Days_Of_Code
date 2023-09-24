@@ -1,0 +1,28 @@
+//Day_7
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int t;
+   cout<<"Enter Number Of Test cases: ";
+   cin >>t;
+   while(t--)
+   {
+       int x,y;
+       cout<<"Enter Number Of Following: ";
+       cin>>x;
+       cout<<"Enter Number Of Followers: ";
+       cin>>y;
+       if(y*10>=x)
+       {
+           cout<<"No,It's Not A Spam Account."<<endl;
+       }
+       else
+       {
+           cout<<"Yes,It's A Spam Account."<<endl;
+       }
+   }
+   return 0;
+}
