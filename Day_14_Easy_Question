@@ -1,0 +1,22 @@
+//Day_14_Easy_Question
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cout<<"Enter Number Of Test Cases: ";
+	cin>>t;
+	while(t--)
+	{
+	    int x,y,min;
+	    cout<<"Chef's Desired Stair: ";
+	    cin>>x;
+	    cout<<"How Much Can He Climb: ";
+	    cin>>y;
+	    min=(x%y);
+	    cout<<"Total Moves To Reach: "<<(x/y)+min<<endl;
+	}
+	return 0;
+}
