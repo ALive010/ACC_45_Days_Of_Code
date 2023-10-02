@@ -1,0 +1,28 @@
+//Day_15_Tough_Question
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cout<<"Enter Number Of Test Cases: ";
+	cin>>t;
+	while(t--)
+	{
+	    int n,peak,temp=0,i;
+	    cout<<"Enter Number Of Mountains: ";
+	    cin>>n;
+	    for(i=1;i<=n;i++)
+	    {
+	        cout<<"Enter Height Of Mountain "<<i<<" (Km):";
+	        cin>>peak;
+	        if(peak>temp)
+	        {
+	            temp=peak;
+	        }
+	    }
+	    cout<<"The Base Will Be At "<<temp<<"Km Height.";
+	}
+	return 0;
+}
