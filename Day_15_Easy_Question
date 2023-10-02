@@ -1,0 +1,25 @@
+//Day_15_Easy_Question
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cout<<"Enter Number Of Test Cases: ";
+	cin>>t;
+	while(t--)
+	{
+	    int n,x,flip;
+	    cout<<"Enter The Total Number Of Cards: ";
+	    cin>>n;
+	    cout<<"Number Of Cards(Facing Up): ";
+	    cin>>x;
+	    flip=n-x;
+	    if(flip>x)
+	    cout<<"Number Of Cards You Need To Flip: "<<x<<endl;
+	    else
+	    cout<<"Number Of Cards You Need To Flip: "<<flip<<endl;
+	}
+	return 0;
+}
