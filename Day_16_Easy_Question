@@ -1,0 +1,29 @@
+//Day_16_Easy_Question
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cout<<"Enter Number Of Test Cases: ";
+	cin>>t;
+	while(t--)
+	{
+	    int n,m,total;
+	    cout<<"Enter Total Number Of Candies: ";
+	    cin>>n;
+	    cout<<"Enter Total Number Of Friends: ";
+	    cin>>m;
+	    total=n%m;
+	    if(n%2==0 && total==0)
+	    {
+	        cout<<"Yes, It Can Be Distributed."<<endl;
+	    }
+	    else
+	    {
+	        cout<<"No, It Can't Be Distributed."<<endl;
+	    }
+	}
+	return 0;
+}
