@@ -1,0 +1,21 @@
+//Day_16_Tough_Question
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cout<<"Enter Number Of Test Cases: ";
+	cin>>t;
+	while(t--)
+	{
+	    int n,temp;
+	    cout<<"Total Number Of Chocolates: ";
+	    cin>>n;
+	    
+	    temp=n/2;
+	    cout<<temp<<" "<<(n-temp)/2<<" "<<(n-temp)/2<<endl;
+	}
+	return 0;
+}
