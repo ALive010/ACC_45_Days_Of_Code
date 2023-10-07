@@ -1,0 +1,44 @@
+//Day_17_Easy_Question
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t;
+	cout<<"Enter Number Of Test Cases: ";
+	cin>>t;
+	while(t--)
+	{
+	    int n;
+	    cout<<"Enter Your Seat Number: ";
+	    cin>>n;
+	    if((n>=11 && n<=15) || (n>=26 && n<=30))
+	    {
+	        if(n<16)
+	        {
+	            cout<<"Lower Single"<<endl;
+	        }
+	        else
+	        {
+	            cout<<"Upper Single"<<endl;
+	        }
+	    }
+	    else if((n>=1 && n<=10) || (n>=16 && n<=25))
+	    {
+	        if(n<11)
+	        {
+	            cout<<"Lower Double"<<endl;
+	        }
+	        else
+	        {
+	            cout<<"Upper Double"<<endl;
+	        }
+	    }
+	    else
+	    {
+	        cout<<"Invalid Input!!"<<endl;
+	    }
+	}
+	return 0;
+}
