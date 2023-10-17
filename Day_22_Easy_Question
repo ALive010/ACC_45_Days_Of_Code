@@ -1,0 +1,31 @@
+//Day_22_Easy_Question
+//Shivam Kumar Singh
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+  cout<<"Enter Number Of Test Cases: ";
+	cin>>t;
+	while(t--)
+	{
+	    int A,B,C,X;
+	    cout<<"Alice's Budget: ";
+	    cin>>A;
+	    cout<<"Bob's Budget: ";
+	    cin>>B;
+	    cout<<"Charlie's Budget: ";
+	    cin>>C;
+	    cout<<"Netflix Subscription Cost: ";
+	    cin>>X;
+	    if((A+B>=X) || (B+C>=X) || (A+C>=X))
+	    {
+	        cout<<"Yes"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"No"<<endl;
+	    }
+	}
+	return 0;
+}
