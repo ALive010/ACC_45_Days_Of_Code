@@ -1,0 +1,29 @@
+//Day_25_Tough_Question
+//Shivam Kumar Singh
+#include <bits/stdc++.h>
+using namespace std;
+int main() 
+{
+	int t;
+	cin>>t;
+	while(t--){
+    	vector<int> a(3), b(3);
+    	cin>>a[0]>>a[1]>>a[2]>>b[0]>>b[1]>>b[2];
+    	sort(a.begin(), a.end());
+    	sort(b.begin(), b.end());
+    	string s1,s2;
+    	s1.push_back('0'+a[2]);
+    	s1.push_back('0'+a[1]);
+    	s1.push_back('0'+a[0]);
+    	s2.push_back('0'+b[2]);
+    	s2.push_back('0'+b[1]);
+    	s2.push_back('0'+b[0]);
+    	if(s1>s2)
+    	    cout<<"Alice"<<endl;
+    	else if(s1<s2)
+    	    cout<<"Bob"<<endl;
+    	else
+    	    cout<<"Tie"<<endl;
+	}
+	return 0;
+}
